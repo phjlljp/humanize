@@ -8,10 +8,11 @@ The patterns span 7 categories (vocabulary, syntax, content, structure, formatti
 
 ## Installation
 
-Install via the Claude Code plugin system:
+Add the marketplace and install the plugin:
 
 ```
-claude plugin add anthropos
+/plugin marketplace add phjlljp/anthropos
+/plugin install anthropos@phjlljp
 ```
 
 ## Usage
