@@ -6,12 +6,12 @@
   },
   "plugins": [
     {
-      "name": "anthropos",
+      "name": "humanize",
       "description": "Transform AI text into human-sounding writing",
       "version": "1.0.0",
       "source": "./",
       "author": {
-        "name": "anthropos"
+        "name": "humanize"
       }
     }
   ]

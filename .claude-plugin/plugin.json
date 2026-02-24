@@ -1,10 +1,11 @@
 {
-  "name": "anthropos",
+  "name": "humanize",
   "version": "1.0.0",
   "description": "Transform AI-generated text into human-sounding writing. Detects and eliminates 43 documented AI writing anti-patterns based on Wikipedia's Signs of AI Writing and Grokipedia's analysis.",
   "author": {
-    "name": "anthropos"
+    "name": "humanize"
   },
   "license": "MIT",
+  "repository": "https://github.com/phjlljp/humanize",
   "keywords": ["humanizer", "ai-writing", "text-transformation", "writing-quality"]
 }

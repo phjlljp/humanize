@@ -1,8 +1,8 @@
-# Anthropos
+# Humanize
 
 Make AI text sound human.
 
-Anthropos is a Claude Code plugin that transforms AI-generated writing into text that reads like a person wrote it. It works by detecting and eliminating 43 documented AI writing anti-patterns drawn from Wikipedia's "Signs of AI writing" and Grokipedia's analysis of AI-generated text.
+Humanize is a Claude Code plugin that transforms AI-generated writing into text that reads like a person wrote it. It works by detecting and eliminating 43 documented AI writing anti-patterns drawn from Wikipedia's "Signs of AI writing" and Grokipedia's analysis of AI-generated text.
 
 The patterns span 7 categories (vocabulary, syntax, content, structure, formatting, behavioral tells, and statistical signals) and are ranked into 3 severity tiers. The plugin runs a 4-phase process: detect patterns in the input, rewrite to remove them, audit the rewrite for survivors, then output the result.
 
@@ -11,42 +11,42 @@ The patterns span 7 categories (vocabulary, syntax, content, structure, formatti
 Add the marketplace and install the plugin:
 
 ```
-/plugin marketplace add phjlljp/anthropos
-/plugin install anthropos@phjlljp
+/plugin marketplace add phjlljp/humanize
+/plugin install humanize@phjlljp
 ```
 
 ## Usage
 
 ```
-/anthropos <text or file path>
+/humanize <text or file path>
 ```
 
-Pass inline text or a path to a file. Anthropos will scan for AI patterns, rewrite, audit, and return the cleaned text.
+Pass inline text or a path to a file. Humanize will scan for AI patterns, rewrite, audit, and return the cleaned text.
 
 ### Examples
 
 Basic transformation:
 
 ```
-/anthropos "The company's innovative approach serves as a testament to their commitment to excellence, showcasing the transformative potential of cutting-edge technology."
+/humanize "The company's innovative approach serves as a testament to their commitment to excellence, showcasing the transformative potential of cutting-edge technology."
 ```
 
 Transform with a diff showing what changed and why:
 
 ```
-/anthropos --diff "Additionally, the platform offers a comprehensive suite of tools designed to enhance productivity and foster collaboration."
+/humanize --diff "Additionally, the platform offers a comprehensive suite of tools designed to enhance productivity and foster collaboration."
 ```
 
 Casual register with thorough cleanup (all tiers):
 
 ```
-/anthropos --casual --thorough ./draft-blog-post.md
+/humanize --casual --thorough ./draft-blog-post.md
 ```
 
 Academic register:
 
 ```
-/anthropos --academic ./paper-intro.md
+/humanize --academic ./paper-intro.md
 ```
 
 ## Flags
@@ -59,7 +59,7 @@ Academic register:
 | `--academic` | Target academic register: passive voice where conventional, technical precision, reduced hedging |
 | `--thorough` | Address all 3 tiers including subtle patterns (default handles Tier 1 and Tier 2 only) |
 
-When no register flag is provided, Anthropos auto-detects the register of the input and matches it.
+When no register flag is provided, Humanize auto-detects the register of the input and matches it.
 
 ## How it works
 
