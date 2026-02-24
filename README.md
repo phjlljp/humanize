@@ -152,13 +152,13 @@ When no register flag is provided, Humanize auto-detects the register of the inp
 
 ## Sources
 
-[Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing) -- maintained by WikiProject AI Cleanup
+[Wikipedia: Signs of AI writing](https://en.wikipedia.org/wiki/Wikipedia:Signs_of_AI_writing), maintained by WikiProject AI Cleanup
 
 [Grokipedia: Signs of AI-generated writing](https://grokipedia.com/page/Signs_of_AI-generated_writing)
 
 ## Credits
 
-The idea for this plugin came from the [Humanizer skill](https://github.com/blader/humanizer) by blader. The "Personality and Soul" approach -- that removing AI patterns is only half the job, and that clean but voiceless writing is just as suspect -- is also directly adapted from that project.
+The idea for this plugin came from the [Humanizer skill](https://github.com/blader/humanizer) by blader. The "Personality and Soul" approach, that removing AI patterns is only half the job and that clean but voiceless writing is just as suspect, is also directly adapted from that project.
 
 ## License
 
